@@ -1,0 +1,9 @@
+# Run this using:
+#   kamel kit create quarkus --image=lburgazzoli/camel-k-quarkus:1.0.2-SNAPSHOT
+#   kamel run quarkus.yaml --kit quarkus
+
+- from:
+    uri: "knative:channel/dev-null"
+    steps:
+      - log:
+          message: "Quarkus native integration received a message: ${body}"

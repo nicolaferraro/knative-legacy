@@ -1,0 +1,7 @@
+# Properties for the Telegram integration
+
+# Token of the Telegram ChatBod (Ask the @botfather bot on Telegram)
+token=<put-your-token-here>
+
+# Telegram chat that will receive notifications
+chatId=<put-your-chat-id-here>

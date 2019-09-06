@@ -1,0 +1,33 @@
+apiVersion: eventing.knative.dev/v1alpha1
+kind: Channel
+metadata:
+  name: in
+spec:
+  provisioner:
+    apiVersion: eventing.knative.dev/v1alpha1
+    kind: ClusterChannelProvisioner
+    name: in-memory
+
+---
+
+apiVersion: eventing.knative.dev/v1alpha1
+kind: Channel
+metadata:
+  name: out
+spec:
+  provisioner:
+    apiVersion: eventing.knative.dev/v1alpha1
+    kind: ClusterChannelProvisioner
+    name: in-memory
+
+---
+
+apiVersion: eventing.knative.dev/v1alpha1
+kind: Channel
+metadata:
+  name: dev-null
+spec:
+  provisioner:
+    apiVersion: eventing.knative.dev/v1alpha1
+    kind: ClusterChannelProvisioner
+    name: in-memory
